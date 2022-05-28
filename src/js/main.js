@@ -48,7 +48,12 @@ const countries = (data) => {
               <b>Sub-Región:
               ${item.subregion}
               </b>
-            </div>  
+            </div>
+            <div>
+            <b>Population:
+            ${item.population}
+            </b>
+          </div>
             </div>
             <div class="footer-card">
               <a href="country.html?name=${item.name.common}" class="link-card">More Details</a>
