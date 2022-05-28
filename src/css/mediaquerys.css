@@ -1,0 +1,56 @@
+/* medias querys */
+@media (max-width: 1024px) {
+  section,
+  main {
+    padding: 0 2rem;
+  }
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .form-search input {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  section,
+  main {
+    padding: 0 1rem;
+  }
+  .nav-contacts li {
+    font-size: 10px;
+  }
+  .form-search input {
+    background-color: var(--color-gray);
+    font-size: 15px;
+  }
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 425px) {
+  section,
+  main {
+    padding: 0 0;
+  }
+  .form-search input {
+    background-color: var(--color-gray);
+    font-size: 10px;
+  }
+  .nav-contacts {
+    display: none;
+  }
+  .header nav {
+    display: flex;
+    justify-content: center;
+  }
+  .grid {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+  .modal-window > div {
+    width: 300px !important;
+  }
+}
+
+/* alphabetically sorted attributes */

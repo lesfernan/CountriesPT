@@ -1,0 +1,59 @@
+/* modal */
+.modal-window {
+  background-color: rgba(255, 255, 255, 0.25);
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+  right: 0;
+  top: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  visibility: hidden;
+  z-index: 999;
+}
+.modal-window:target {
+  height: 100%;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  width: 100%;
+}
+.modal-window > div {
+  align-items: center;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  -webkit-transform: translate(-50%, -50%);
+  left: 50%;
+  padding: 2rem;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  width: 400px;
+}
+.modal-window h1 {
+  font-size: 150%;
+}
+.modal-close {
+  color: var(--color-black);
+  font-size: 80%;
+  font-weight: 600;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  width: 70px;
+}
+.modal-close:hover {
+  color: var(--color-white);
+}
+.modal-window > div {
+  background-color: var(--color-gray);
+  border-radius: 1rem;
+}
+.modal-window div:not(:last-of-type) {
+  margin-bottom: 15px;
+}
+
+/* alphabetically sorted attributes */
